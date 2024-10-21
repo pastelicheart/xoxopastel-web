@@ -132,7 +132,7 @@ header nav ul li a:hover {
   opacity: 0.4 !important;
 }
 
-h1 {
+body div h1 {
   color: rgb(231, 231, 231);
   font-family: "Fredoka One";
   font-style: normal;
@@ -141,7 +141,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-p {
+body div p {
   color: rgb(231, 231, 231);
   font-family: "Gotham-Rounded-Bold";
   font-style: normal;
@@ -149,7 +149,7 @@ p {
   font-weight: 800;
   width: auto;
   margin-bottom: 35px;
-  opacity: 0.91;
+  opacity: 0.9;
 }
 
 footer {
