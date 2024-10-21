@@ -99,7 +99,7 @@ header nav ul li img {
   height: auto;
   top: -1.55%;
   object-fit: fill;
-  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, .7));
+  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, 0.7));
 }
 
 header nav ul li img:hover {
@@ -121,30 +121,31 @@ header nav ul li a {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, .5));
+  filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, 0.5));
   -webkit-tap-highlight-color: transparent;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 header nav ul li a:hover {
-  filter: drop-shadow(0px 0px 14px rgba(176, 159, 255, .8));
+  filter: drop-shadow(0px 0px 14px rgba(176, 159, 255, 0.8));
   opacity: 0.4 !important;
 }
 
 footer {
   width: 100%;
-    height: auto;
-    margin-top: 8rem;
-    padding-bottom: 6rem;
-    bottom: 0;
-    background: rgba(29, 31, 49, 0.5);
-    filter: drop-shadow(1px 0px 30px rgba(50, 44, 75, 0.5));
-    backdrop-filter: blur(3px);
+  height: auto;
+  margin-top: 8rem;
+  padding-bottom: 6rem;
+  bottom: 0;
+  position: fixed;
+  background: rgba(29, 31, 49, 0.5);
+  filter: drop-shadow(1px 0px 30px rgba(50, 44, 75, 0.5));
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
 
-footer nav{
+footer nav {
   padding-top: 45px;
   width: 100%;
   display: flex;
@@ -153,12 +154,12 @@ footer nav{
   justify-content: center;
 }
 
-footer nav ul{
+footer nav ul {
   width: 15%;
   min-width: 200px;
 }
 
-footer nav ul li{
+footer nav ul li {
   margin-bottom: 5px;
 }
 
@@ -167,7 +168,7 @@ footer nav ul li img {
   height: auto;
   top: -1.55%;
   object-fit: fill;
-  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, .7));
+  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, 0.7));
 }
 
 footer nav ul li img:hover {
@@ -175,7 +176,7 @@ footer nav ul li img:hover {
   filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, 1));
 }
 
-footer nav ul li a{
+footer nav ul li a {
   font-family: "Gotham-SSM";
   font-style: normal;
   font-size: 20px;
@@ -185,5 +186,5 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover {
-  opacity: .5 !important;
+  opacity: 0.5 !important;
 }
