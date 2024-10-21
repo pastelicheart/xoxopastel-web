@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamRounded-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Rounded-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-SSM";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-SSM-Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gotham-Black.otf") format("opentype");
+}
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: ease-in 0.2s;
+}
+
+body {
+  background: url("../images/StarRepeating.png"),
+    linear-gradient(
+      to right,
+      rgb(159, 186, 255),
+      rgba(174, 165, 254),
+      rgba(223, 126, 248),
+      rgba(224, 142, 165)
+    ),
+    rgb(29, 31, 49);
+  background-repeat: repeat;
+  background-size: 56px 56px, auto, auto;
+  background-blend-mode: overlay;
+  pointer-events: none;
+  transition: opacity 1.5s ease-out;
+  z-index: -1;
+}
+
+header {
+  padding-top: 1%;
+  padding-bottom: 0%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /*background: linear-gradient(
+    0deg,
+    rgba(243, 245, 247, 0.7) 100%,
+    rgba(235, 232, 216, 0) 0%
+  );*/
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+header nav ul {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li img {
+  width: 100px;
+  height: auto;
+  top: -1.55%;
+  object-fit: fill;
+  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, .7));
+}
+
+header nav ul li img:hover {
+  width: 110px;
+  filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, 1));
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+header nav ul li a {
+  color: rgb(255, 255, 255);
+  font-family: "Gotham-SSM";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, .5));
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  filter: drop-shadow(0px 0px 14px rgba(176, 159, 255, .8));
+  opacity: 0.4 !important;
+}
+
+footer {
+  width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+    bottom: 0;
+    background: rgba(29, 31, 49, 0.5);
+    filter: drop-shadow(1px 0px 30px rgba(50, 44, 75, 0.5));
+    backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+footer nav{
+  padding-top: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+footer nav ul{
+  width: 15%;
+  min-width: 200px;
+}
+
+footer nav ul li{
+  margin-bottom: 5px;
+}
+
+footer nav ul li img {
+  width: 100px;
+  height: auto;
+  top: -1.55%;
+  object-fit: fill;
+  filter: drop-shadow(0px 0px 4px rgba(176, 159, 255, .7));
+}
+
+footer nav ul li img:hover {
+  width: 110px;
+  filter: drop-shadow(0px 0px 8px rgba(176, 159, 255, 1));
+}
+
+footer nav ul li a{
+  font-family: "Gotham-SSM";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  color: #b09fff;
+  cursor: pointer;
+}
+
+footer nav ul li a:hover {
+  opacity: .5 !important;
+}
