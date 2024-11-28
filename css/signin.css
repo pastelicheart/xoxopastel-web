@@ -1,0 +1,101 @@
+main {
+    height: auto;
+    width: auto;
+    padding-top: 1in;
+    padding-left: 20%;/*200px;*/
+    padding-right: 20%;/*200px;*/
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58 58 121 / 28%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 8% 5% 8% 5%;
+    border-radius: 32px;
+}
+
+.form-group input {
+    background-color: white;
+    direction: ltr;
+    margin: 2px 2px 0 2px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    width: 100%;
+    font-family: "Gotham-SSM";
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border: 0;
+}
+
+main h1 {
+    font-family: "Gotham-SSM";
+}
+
+main h2 {
+    font-family: "Gotham-SSM";
+}
+
+.form-group label {
+    font-family: "Gotham-SSM";
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.form {
+    margin-left: 45px;
+}
+
+.form-description {
+    display: flex;
+    flex-direction: column;
+}
+
+#passwordInput {
+    height: 0px;
+    visibility: hidden;
+}
+
+.signup-link {
+    font-size: 20px;
+}
+
+.signup-text{
+    color: #b09fff;
+}
+
+.form-description h1 {
+    font-size: 45px;
+}
+
+#playerAccquired{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#robloxPlayerImg {
+    background-color: white;
+    border-radius: 90px;
+    height: 42px;
+    margin-right: 8px;
+}
+
+#playerAccquired h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+}
+
+.hide-object {
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+}
+

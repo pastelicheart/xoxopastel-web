@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - xoxo, pastel</title>
+    <meta name="description" content="                                         " />
+    <link rel="canonical" href="https://www.xoxopastel.com/v1/signin" />
+    <link rel="shortcut icon" type="image/png" href="../images/xoxo_logo.png" />
+    <!-- SEO -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signin.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div id="sign-in">
+        <ul>
+          <h1>Sign In</h1>
+          <h2>Use your 'xoxo, pastel' account or Roblox Account</h2>
+        </ul>
+        <ul>
+          <div>
+            <label>Email Address or Roblox Username</label>
+            <input type="email" aria-label="Roblox Username or email">
+          </div>
+          <div id="passwordInput">
+            <label>Password</label>
+            <input type="password" aria-label="Password">
+          </div>
+        </ul>
+        <!--<a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww%2Exoxopastel%2Ecom%2Fv1%2Fsignin">Forgot Email?</a>-->
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+      async function loadTemplate(file, elementId) {
+        const response = await fetch(file);
+        const content = await response.text();
+        document.getElementById(elementId).innerHTML = content;
+      }
+
+      loadTemplate("../header.html", "header");
+      loadTemplate("../footer.html", "footer");
+    </script>
+  </body>
+</html>

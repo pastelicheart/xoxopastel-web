@@ -1,29 +1,19 @@
-<html lang="en-US" dir="ltr">
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/index.css" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xoxo, pastel - Home</title>
+    <meta name="description" content="                                         " />
+    <link rel="canonical" href="https://www.xoxopastel.com/" />
+    <link rel="shortcut icon" type="image/png" href="images/xoxo_logo.png" />
+    <!-- SEO -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a id="#home">HOME</a>
-            </li>
-            <li>
-              <a id="#ourgames">OUR GAMES</a>
-            </li>
-            <li style="padding: 0;">
-              <img src="images/xoxo_logo.png"/>
-            </li>
-            <li>
-              <a href="https://www.roblox.com/users/1523513359/profile">STUDIO</a>
-            </li>
-            <li>
-              <a id="#socials">SOCIALS</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
       <div style="display: flex; flex-direction: column; align-items: center; margin: 10%;">
         <h1 style="font-size: 45px;">
           Page Under Construction
@@ -32,52 +22,17 @@
           We are so sorry, 'xoxo, pastel'; and it's sister groups apologize for the inconvenience downtime; Anybody reaching out can contact pastel@xoxopastel.com for more information.
         </p>
       </div>
-      <footer>
-        <nav>
-            <ul style="margin-left: 59px; margin-right:15%">
-                <li>
-                    <img src="images/xoxo_logo.png" />
-                </li>
-                <li>
-                    <p style="cursor:default; margin-bottom: 7px;">©<script type="text/javascript">document.write(new Date().getFullYear());</script> xoxo, pastel</p>
-                </li>
-                <li>
-                    <p style="cursor:default;">All Rights Reserved.</p>
-                </li>
-            </ul>
-            <ul>
-                <li class="spaceout">
-                    <a style="cursor:default; color: whitesmoke;">Navigation</a>
-                </li>
-                <li>
-                    <a href="#ourgames">Our Games</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact Us</a>
-                </li>
-                <li>
-                    <a href="/legal/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="/legal/terms">Terms Of Service</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="spaceout">
-                    <a style="cursor:default; color: whitesmoke;">Social</a>
-                </li>
-                <li>
-                    <a href="https://www.roblox.com/groups/12607649/xoxo-pastel#!/about">Roblox</a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/xoxopastel">Discord</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/pastelicheart">Twitter</a>
-                </li>
-            </ul>
-          </nav>
-      </footer>
-    
-  </html>
+    </main>
+    <div id="footer"></div>
+    <script>
+      async function loadTemplate(file, elementId) {
+        const response = await fetch(file);
+        const content = await response.text();
+        document.getElementById(elementId).innerHTML = content; // Use getElementById here
+      }
+
+      loadTemplate("header.html", "header");
+      loadTemplate("footer.html", "footer");
+    </script>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+    <meta name="keywords" content="xoxo, xoxo pastel, pastel, xoxo pastelicheart, pastelicheart, roblox, roblox studio, xoxo pastel studio, roblox youtuber, Avatar Outfits, Avatar, Outfits, Catalog, Studio, Catalog Avatar Studio, Preppy, Preppy Avatar Outfits, xoxo games, pastel, roblox avatar, cheap avatars" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:site_name" content="xoxo, pastel" />
+    <meta property="og:title" content="xoxo, pastel" />
+    <meta property="og:url" content="https://www.xoxopastel.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="                                            " />
+    <meta property="og:image" content="images/xoxo_logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pastelicheart" />
+    <meta name="twitter:title" content="xoxo, pastel" />
+    <meta name="twitter:url" content="https://www.xoxopastel.com/" />
+    <link rel="apple-touch-icon" sizes="192x192" href="images/xoxo_logo.png">
+
+SEO STUFF

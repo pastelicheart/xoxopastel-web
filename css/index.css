@@ -64,7 +64,6 @@ body {
   background-repeat: repeat;
   background-size: 56px 56px, auto, auto;
   background-blend-mode: overlay;
-  pointer-events: none;
   transition: opacity 1.5s ease-out;
   z-index: -1;
 }
@@ -79,7 +78,9 @@ header {
     0deg,
     rgba(243, 245, 247, 0.7) 100%,
     rgba(235, 232, 216, 0) 0%
-  );*/
+  );
+  position: fixed;
+  transform: translateY(-100%);*/
   top: 0;
   width: 100%;
   backdrop-filter: blur(8px);
@@ -218,4 +219,9 @@ footer nav ul li p {
 
 footer nav ul li a:hover {
   opacity: 0.5 !important;
+}
+
+.xoxoLogo {
+  display: block;
+  content: url("../images/xoxo_logo.png");
 }

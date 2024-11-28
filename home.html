@@ -1,9 +1,50 @@
-<html lang="en-US" dir="ltr">
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/home.css" />
-    </head>
-    <body>
-      
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xoxo, pastel - Home</title>
+    <meta name="description" content="                                         " />
+    <link rel="canonical" href="https://www.xoxopastel.com/" />
+    <link rel="shortcut icon" type="image/png" href="images/xoxo_logo.png" />
+    <!-- SEO -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <section>
+
+      </section>
+      <section id="#ourgames">
+        <h1 style="font-size: 45px;">
+            OUR METRICS
+        </h1>
+        <p style="font-size: 25px;">
+            Proud for delivering fun and engaging experiences for all!
+        </p>
+        <ul style="display:flex;">
+            <li>
+                
+            </li>
+        </ul>
+      </section>
+      <section>
+        
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+      async function loadTemplate(file, elementId) {
+        const response = await fetch(file);
+        const content = await response.text();
+        document.getElementById(elementId).innerHTML = content; // Use getElementById here
+      }
+
+      loadTemplate("header.html", "header");
+      loadTemplate("footer.html", "footer");
+      // https://games.roblox.com/v1/games?universeIds=4879091597,4016656448,3954166644
+    </script>
+  </body>
 </html>
