@@ -34,7 +34,7 @@
             
         </div>
         <div>
-            <form class="form" method="POST" action="http://api.xoxopastel.com/v1/authentication/login">
+            <form id="form">
                 <div class="form-group">
                   <label for="email">Email Address or Roblox Username</label>
                   <input type="text" id="email" name="email" aria-label="Roblox Username or email" required />
@@ -65,6 +65,35 @@
       loadTemplate("../header.html", "header");
       loadTemplate("../footer.html", "footer");
     </script>
+    <script>
+      document.getElementById("form").addEventListener("submit", async (event) => {
+          event.preventDefault(); 
+
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          try {
+              const response = await fetch("http://api.xoxopastel.com/v1/authentication/login", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email, password }),
+              });
+
+              const result = await response.json();
+
+              if (response.ok) {
+                  alert("Login successful!");
+                  
+                  window.location.href = "http://www.xoxopastel.com/";
+              } else {
+                  alert(`Login failed: ${result.message}`);
+              }
+          } catch (error) {
+              console.error("Error logging in:", error);
+              alert("An error occurred. Please try again.");
+          }
+      });
+  </script>
   </body>
 </html>
 
