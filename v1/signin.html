@@ -76,7 +76,7 @@
               const response = await fetch("https://api.xoxopastel.com/v1/authentication/login", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
-                  body: { email, password },
+                  body: JSON.stringify({ email, password }),
                   credentials: "include",
               });
 
